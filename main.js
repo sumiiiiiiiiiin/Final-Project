@@ -68,19 +68,19 @@ function Enemy(){
 
 function loadImage(){
     backgroundImage = new Image();
-    backgroundImage.src="images/background.jpg";
+    backgroundImage.src="background.jpg";
 
     spaceshipImage = new Image();
-    spaceshipImage.src="images/spaceship.png";
+    spaceshipImage.src="spaceship.png";
 
     bulletImage = new Image();
-    bulletImage.src="images/bullet.png";
+    bulletImage.src="bullet.png";
 
     enemyImage = new Image();
-    enemyImage.src="images/enemy.png";
+    enemyImage.src="enemy.png";
 
     gameOverImage = new Image();
-    gameOverImage.src="images/gameover.png";
+    gameOverImage.src="gameover.png";
 }
 
 let keysDown = {};
@@ -112,10 +112,10 @@ function createEnemy(){
 
 function update() {
     if ('ArrowRight' in keysDown) {
-        spaceshipX += 5;
+        spaceshipX += 3;
     } //right
     if ('ArrowLeft' in keysDown) {
-        spaceshipX -= 5;
+        spaceshipX -= 3;
     } //left
 
     if(spaceshipX <=0){
